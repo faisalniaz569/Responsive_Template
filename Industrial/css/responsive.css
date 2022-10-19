@@ -1,0 +1,409 @@
+/* Responsive CSS */
+
+/* For mobile phones: */
+[class*="col-"] { width: 100%; }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* For mobile phones: */
+    [class*="col-"] { width: 100%; }
+
+    .topsocialmedia { float: left; }
+
+    /*=================================================*/
+    /* Responsive menu */
+    #mainmenu img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        padding: 10px;
+    }
+
+    #mainmenu span {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .topnav {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+
+    .topnav a {
+        position: relative;
+        float: none;
+        display: block;
+    }
+
+    .topnav a:not(:first-child), .dropdown .dropbtn { display: none; }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 197px;
+        color: #fbce9d;
+        background-color: #482c04;
+    }
+
+    .topnav.responsive, .topnav.responsive .dropdown-content { position: relative; }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    .topnav.responsive .dropdown { float: none; }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Responsive menu end */
+    /*=================================================*/
+
+    /* Heading and paragraph font-size in Extra small devices  */
+    h1, h2, h3, h4, h5, h6 { font-size: 24px; }
+
+    p { font-size: 18px; text-align: justify; }
+    
+    #contact p { text-align: left; }
+
+    .ceodetails { margin-top: 30px; font-size: 14px; }
+
+    #companydetails h4.subtitle, #ceodocumentary h4.subtitle,
+    #companydetails h2.company_title, #ceodocumentary h2.company_title,
+    #fullbanner h2 { font-size: 24px; }
+
+    #fullbanner .page_title { display: none; }
+
+    .ceodetails { margin-top: 30px; }
+
+    #mainbreadcumb ul.breadcrumb li { font-size: initial; }
+
+    .approachtext {
+        margin-left: 0;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .textwrapcenter .wrapping .centerimage,
+    .textwrapcenter .wrapping .centerimage img {
+        width: 500px;
+        height: 500px;
+    }
+
+    .textwrapcenter .wrapping .centerimage {
+        transform: translate(-50%, -50%) scale(0.85);
+        z-index: -1;
+        opacity: 0.3;
+    }
+    
+    .textwrapcenter .wrapping .left::before, 
+    .textwrapcenter .wrapping .right::before, 
+    .textwrapcenter .wrapping .left,
+    .textwrapcenter .wrapping .right {
+        float: none;
+        width: 100%;
+    }
+
+    .textwrapcenter .wrapping .left::before, 
+    .textwrapcenter .wrapping .right::before {
+        shape-outside: polygon(0);
+    }
+
+    .textwrapcenter .wrapping .left,
+    .textwrapcenter .wrapping .right { margin-bottom: 30px; }
+
+    .team_content .col-12, #offshoreindustryservice .col-4 { padding: 15px; }
+
+    #companyreview .col-4 { padding-right: 15px; }
+
+    .termuse .list { float: left; }
+
+    #copyright .col-6 { padding-left: 30px; }
+
+    #copyright p { font-size: 14px; }
+
+    .newspaper p { font-size: 12px; }
+
+    .termuse .list ul li { padding-left: 0; }
+
+    .termuse .list ul li:last-child { padding-left: 10px; }
+
+    #contact { height: auto; }
+
+    #contact .wrapper { height: 880px; }
+
+    #footer .col-3 { padding: 0; }
+    
+    #footer { padding: 30px 30px; }
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For tablets: */
+    .col-s-1 { width: 8.33%; }
+
+    .col-s-2 { width: 16.66%; }
+
+    .col-s-3 { width: 25%; }
+
+    .col-s-4 { width: 33.33%; }
+
+    .col-s-5 { width: 41.66%; }
+
+    .col-s-6 { width: 50%; }
+
+    .col-s-7 { width: 58.33%; }
+
+    .col-s-8 { width: 66.66%; }
+
+    .col-s-9 { width: 75%; }
+
+    .col-s-10 { width: 83.33%; }
+
+    .col-s-11 { width: 91.66%; }
+
+    .col-s-12 { width: 100%; }
+
+    .topsocialmedia { float: left; }
+
+    /* Heading and paragraph font-size in Extra small devices  */
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 24px;
+    }
+
+    p { font-size: 18px; text-align: justify; }
+
+    #fullbanner { height: 100vh; }
+    
+    #fullbanner .page_title { display: none; }
+
+    #fullbanner h2 { font-size: 36px; }
+
+    .ceodetails { margin-top: 30px; }
+
+    #mainbreadcumb ul.breadcrumb li { font-size: initial; }
+
+    .approachtext {
+        margin-left: 0;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    .team_content .col-12, #offshoreindustryservice .col-4 { padding: 15px; }
+
+    #companyreview .col-4 { padding-right: 15px; }
+
+    #copyright .col-6 { padding-left: 30px; }
+
+    .termuse .list { float: left !important; }
+
+    .termuse .list ul li { padding-left: 0; }
+
+    .termuse .list ul li:last-child { padding-left: 10px; }
+
+    #contact { height: auto; }
+
+    #contact .wrapper { height: 825px; }
+
+    #footer .col-3 {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    #footer { padding: 30px 30px; }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    .col-m-1 { width: 8.33%; }
+
+    .col-m-2 { width: 16.66%; }
+
+    .col-m-3 { width: 25%; }
+
+    .col-m-4 { width: 33.33%; }
+
+    .col-m-5 { width: 41.66%; }
+
+    .col-m-6 { width: 50%; }
+
+    .col-m-7 { width: 58.33%; }
+
+    .col-m-8 { width: 66.66%; }
+
+    .col-m-9 { width: 75%; }
+
+    .col-m-10 { width: 83.33%; }
+
+    .col-m-11 { width: 91.66%; }
+
+    .col-m-12 { width: 100%; }
+
+    /* Heading and paragraph font-size in Extra small devices  */
+    h1, h2, h3,
+    h4, h5, h6 { font-size: 20px; }
+
+    p { font-size: 16px; }
+
+    #fullbanner { height: 100vh; }
+
+    #fullbanner h2 { font-size: 30px; }
+
+    #fullbanner .page_title { display: block; }
+
+    .ceodetails { margin-top: 30px; }
+
+    .approachtext { margin-left: 15px; text-align: justify; }
+
+    .topsocialmedia { float: right; }
+
+    .termuse .list { float: left; }
+
+    #contact .wrapper {  height: 760px; }
+
+    #companydetails img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    #footer { padding: 30px 30px; }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+
+    /* For desktop: */
+    .col-1 { width: 8.33%; }
+
+    .col-2 { width: 16.66%; }
+
+    .col-3 { width: 25%; }
+
+    .col-4 { width: 33.33%; }
+
+    .col-5 { width: 41.66%; }
+
+    .col-6 { width: 50%; }
+
+    .col-7 { width: 58.33%; }
+
+    .col-8 { width: 66.66%; }
+
+    .col-9 { width: 75%; }
+
+    .col-10 { width: 83.33%; }
+
+    .col-11 { width: 91.66%; }
+
+    .col-12 { width: 100%; }
+
+    /* Heading and paragraph font-size in Extra small devices  */
+    h1, h2, h3,
+    h4, h5, h6 { font-size: 20px; }
+
+    p { font-size: 16px; }
+
+    .topsocialmedia { float: right !important; }
+
+    .ceodetails { margin-top: 80px; }
+
+    #fullbanner { height: 100vh; }
+
+    #fullbanner h2 { font-size: 40px; }
+
+    #fullbanner .page_title { display: block; }
+
+    .termuse .list { float: right !important; }
+
+    #contact { height: auto; }
+
+    #contact .wrapper { height: 800px; }
+
+    #copyright p { font-size: 14px; }
+
+    #footer { padding: 30px 30px; }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+    /* For desktop: */
+    .col-1 { width: 8.33%; }
+
+    .col-2 { width: 16.66%; }
+
+    .col-3 { width: 25%; }
+
+    .col-4 { width: 33.33%; }
+
+    .col-5 { width: 41.66%; }
+
+    .col-6 { width: 50%; }
+
+    .col-7 { width: 58.33%; }
+
+    .col-8 { width: 66.66%; }
+
+    .col-9 { width: 75%; }
+
+    .col-10 { width: 83.33%; }
+
+    .col-11 { width: 91.66%; }
+
+    .col-12 { width: 100%; }
+
+    /* Heading and paragraph font-size in Extra small devices  */
+    h1, h2, h3,
+    h4, h5, h6 { font-size: 1.6vw; }
+
+    p { font-size: 1.3vw; }
+
+    #industryservice .col-4 { padding: 50px 5px; }
+
+    .termuse .list { float: right !important; }
+
+    #fullbanner { height: 80vh; }
+
+    #fullbanner h2 { font-size: 50px; }
+
+    #fullbanner .page_title { display: block; }
+
+    #fullbanner .page_title p { text-align: center; }
+
+    .ceodetails { margin-top: 100px; }
+
+    #contact { height: auto; }
+
+    #contact .wrapper { height: 650px; }
+
+    #copyright .col-6 { padding-left: 0px; }
+
+    #copyright p { line-height: 3 !important; }
+
+    #footer .col-3 { padding: 50px 0; }
+
+    #footer { padding: 0 30px; }
+}
